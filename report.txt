@@ -1,0 +1,52 @@
+STUDENT PERFORMANCE ANALYSIS USING PYTHON AND PYSPARK
+
+1. ABSTRACT
+This project analyzes student academic records using Python and Apache Spark through PySpark. It calculates total and average marks, assigns grades, ranks students, identifies high performers, and calculates subject-wise averages. Streamlit provides an interactive interface to upload datasets and view results.
+
+2. INTRODUCTION
+Educational institutions collect marks across subjects and need clear summaries of student performance. Processing CSV data with PySpark demonstrates a scalable data-processing approach, while Streamlit makes results easy to explore.
+
+3. OBJECTIVES
+- Load student records from CSV.
+- Calculate totals and averages with PySpark.
+- Assign grades using defined thresholds.
+- Rank students and filter high performers.
+- Calculate subject-wise averages.
+- Present results through a dashboard and allow CSV export.
+
+4. SOFTWARE REQUIREMENTS
+- Windows 10/11
+- Python 3.11
+- Java JDK 17
+- PySpark
+- Pandas
+- Streamlit
+- Visual Studio Code or another text editor
+
+5. METHODOLOGY
+The CSV dataset is loaded into Pandas for input validation, then converted into a Spark DataFrame. PySpark transformations calculate total marks, average marks, and grades. The results are sorted by average, high performers are filtered, and subject averages are aggregated. Streamlit presents tables, metrics, and a chart.
+
+6. GRADE CRITERIA
+A: average >= 90
+B: average >= 75 and < 90
+C: average >= 60 and < 75
+D: average >= 40 and < 60
+F: average < 40
+
+7. SAMPLE RESULTS
+For the included sample data:
+- Number of students: 10
+- Top performer: Ananya
+- Ananya's average: 95.33
+- Mathematics average: 75.70
+- Science average: 77.90
+- English average: 78.70
+
+8. CONCLUSION
+The project demonstrates CSV loading, data transformation, aggregation, sorting, and filtering using PySpark. It also provides an interactive dashboard for viewing and downloading analyzed student results.
+
+9. FUTURE SCOPE
+The project can be extended with attendance data, semester comparisons, larger datasets, data validation, authentication, and distributed Spark execution on a cluster.
+
+NOTE
+The supplied dataset contains fictional sample records. The starter app uses Spark local mode on one computer; distributed processing can be added as a future extension.
